@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+  <head>
+    <title>Notes</title>
+    <meta charset="utf-8">
+    <base href="index.html" target="_blank">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://unpkg.com/onsenui/css/onsenui.css" />
+    <link rel="stylesheet" href="https://unpkg.com/onsenui/css/onsen-css-components.min.css" />
+    <link rel="icon" href="favicon.ico">
+    <link href="css/style.css" rel="stylesheet">
+    <meta name="application-name" content="Notes" />
+    <meta name="theme-color" content="#ffffff">
+    <link rel="manifest" href="manifest.json">
+  </head>
+  <body>
+    
+    <div class="wrapper">
+      <div class="wrapper__inner">
+        <div class="notepad">
+          <h1 class="notepad__heading">Notes</h1>
+          <form class="notepad__form">
+            <input class="notepad__form-input" placeholder="Start typing&hellip;" id="form-input" />
+            <label class="notepad__form-label" for="form-input">Add an item</label>
+          </form>
+          <ul class="notepad__list"></ul>
+          <ons-button class="notepad__clear">Clear list</ons-button>
+        </div>
+      </div>
+      
+    </div>
+    <ons-button id="myButton">View Weather</ons-button>
+    <button onclick="notifyMe()">Notify me!</button>
+    <script type="text/javascript">
+      document.getElementById("myButton").onclick = function () {
+          location.href = "weather.html";
+      };
+
+      function notifyMe() {
+  // Let's check if the browser supports notifications
+  if (!("Notification" in window)) {
+    alert("This browser does not support desktop notification");
+  }
+
+  // Let's check whether notification permissions have already been granted
+  else if (Notification.permission === "granted") {
+    // If it's okay let's create a notification
+    var notification = new Notification("Hi there!");
+  }
+
+  // Otherwise, we need to ask the user for permission
+  else if (Notification.permission !== "denied") {
+    Notification.requestPermission().then(function (permission) {
+      // If the user accepts, let's create a notification
+      if (permission === "granted") {
+        var notification = new Notification("Hi there!");
+      }
+    });
+  }
+
+  // At last, if the user has denied notifications, and you
+  // want to be respectful there is no need to bother them anymore.
+}
+  </script>
+    <script src="https://unpkg.com/onsenui/js/onsenui.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/note-list.js"></script>
+  </body>
+</html>
