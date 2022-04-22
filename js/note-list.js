@@ -70,7 +70,6 @@ $(document).ready(function () {
         // Reset notes
         $clearList.on( 'click', function () {
           clearNotes();
-          notifyActions
         });
       }
 
@@ -80,22 +79,3 @@ $(document).ready(function () {
     noteList();
 });
 
-const notifyActions = async () => {
-  const permission = await askPermission();
-  if (permission) {
-    const title = "Transfer Request!"
-    const msg = {
-      badge: "badge.png",
-      tag: 'transfer-request',
-      icon: 'badge.png',
-      image: 'transfer.png',
-      body: "You have an incoming transfer of 10000000 vbux!",
-      actions: [
-        { action: "accept", title: "Accept", icon: "yes.png" },
-        { action: "decline", title: "Decline", icon: "no.png" },
-      ]
-    }
-    const rslt = notify(title, msg);
-    console.log('Success!', rslt);
-  }
-}
