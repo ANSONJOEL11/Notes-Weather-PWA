@@ -1,7 +1,7 @@
 {
-  "short_name": "notes",
-  "name": "notes",
-  "description" : "An offline-capable notes app",
+  "short_name": "notes and weather app",
+  "name": "notes and weather app",
+  "description" : "An offline-capable notes app and weather app ",
   "display": "standalone",
   "orientation": "portrait",
   "start_url": "index.html",
