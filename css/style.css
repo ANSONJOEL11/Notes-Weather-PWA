@@ -11,7 +11,7 @@ body {
 
 body {
   height: 100vh;
-  background: linear-gradient(to left, #57b245 , #f1ef5f);
+  background: linear-gradient(to left, #B24592 , #F15F79);
 }
 
 @media screen and (max-width: 500px) {
@@ -41,9 +41,9 @@ body {
   right: 0;
   bottom: 0;
   margin: auto;
-  width: 800px;
+  width: 400px;
   height: 620px;
-  background-color: rgba(255, 255, 255, 0.721);
+  background-color: #fff;
   overflow: hidden;
   border-radius: 5px;
   box-shadow: 0 20px 80px rgba(0, 0, 0, 0.6);
@@ -76,7 +76,7 @@ body {
   .notepad__heading {
     width: 100%;
     padding: 60px 40px 15px;
-    border-bottom: 1px solid #ffffe0;
+    border-bottom: 1px solid #f5f4f4;
     color: #5f5f5f;
     font-weight: 400;
   }
@@ -109,7 +109,7 @@ body {
 
   .notepad__form-input:focus {
     outline: 0;
-    background-color: #ffdada;
+    background-color: #f5f5f5;
   }
 
   .notepad__list {
@@ -136,7 +136,7 @@ body {
   }
 
   .notepad__list-item:first-of-type {
-    border-top: 1px solid #ffbfbf;
+    border-top: 1px solid #f5f4f4;
   }
 
   .notepad__clear {
@@ -148,7 +148,7 @@ body {
     border: 0;
     font-size: 12px;
     text-transform: uppercase;
-    background-color: rgb(168, 251, 215);
+    background-color: #fff;
     color: #333;
     cursor: pointer;
     font-family: Helvetica Neue, sans-serif;
@@ -163,7 +163,7 @@ body {
   }
 
   .notepad__clear:hover {
-    color: rgb(255, 120, 120);
+    color: #fff;
     background-color: #ea3860;
   }
 
@@ -177,7 +177,8 @@ body {
     }
   }
 
-  .info {
+  .info,
+  .twitter {
     position: fixed;
     top: 0;
     right: 0;
@@ -186,12 +187,14 @@ body {
       background-color 300ms ease;
   }
 
-  .info span {
+  .info span,
+  .twitter span {
     display: none;
   }
 
   @media screen and (max-width: 500px) {
-    .info {
+    .info,
+    .twitter {
       position: absolute;
       z-index: 2;
     }
@@ -203,22 +206,34 @@ body {
    } 
   }
 
+  .twitter {
+    top: 45px;
+  }
 
-  .info svg {
+  @media screen and (max-width: 500px) {
+   .twitter {
+    top: 0;
+   } 
+  }
+
+  .info svg,
+  .twitter svg {
     width: 30px;
     height: 30px;
-    fill: rgb(255, 253, 165);
+    fill: #fff;
     transition:
       fill 300ms ease;
   }
 
   @media screen and (max-width: 500px) {
-   .info svg {
+   .info svg,
+   .twitter svg {
     width: 20px;
     fill: #333;
    } 
   }
 
-  .info:hover svg {
+  .info:hover svg,
+  .twitter:hover svg {
     fill: #333;
   }
