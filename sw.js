@@ -11,6 +11,8 @@ self.addEventListener('install', function(event) {
       // Define what we want to cache
       return cache.addAll([
         '/',
+        'weather.html',
+        'script.js',
         'index.html',
         'js/app.js',
         'js/jquery.min.js',
