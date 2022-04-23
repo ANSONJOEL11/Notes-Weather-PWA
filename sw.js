@@ -37,8 +37,6 @@ self.addEventListener('fetch', function(event) {
     // Look for something in the cache that matches the request
     caches.match(event.request).then(function(response) {
 
-      // If we find something, return it
-      // Otherwise, use the network instead
       return response || fetch(event.request);
     })
   );
