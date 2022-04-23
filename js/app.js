@@ -58,7 +58,7 @@ const notifyActions = async () => {
     const msg = {
       //badge: "badge.png",
       tag: 'transfer-request',
-      icon: 'badge.png',
+      // icon: 'badge.png',
       //image: 'transfer.png',
       body: "You are in the Notes App",
       actions: [
