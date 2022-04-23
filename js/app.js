@@ -54,16 +54,16 @@ const askPermission = async () => {
 const notifyActions = async () => {
   const permission = await askPermission();
   if (permission) {
-    const title = "Transfer Request!"
+    const title = "Notes APP"
     const msg = {
-      badge: "badge.png",
+      //badge: "badge.png",
       tag: 'transfer-request',
       icon: 'badge.png',
-      image: 'transfer.png',
-      body: "You have an incoming transfer of 10000000 vbux!",
+      //image: 'transfer.png',
+      body: "You are in the Notes App",
       actions: [
-        { action: "accept", title: "Accept", icon: "yes.png" },
-        { action: "decline", title: "Decline", icon: "no.png" },
+        { action: "accept", title: "Accept", icon: "img/icon-60.png" },
+        { action: "decline", title: "Decline", icon: "img/icon-60.png" },
       ]
     }
     const rslt = notify(title, msg);
