@@ -15,10 +15,7 @@ const elements = {
   notifyActionsBtn: document.querySelector('#notify-actions'),
 }
 
-const serviceWorkerNotify = async (title, msg) => {
-  const registration = await navigator.serviceWorker.ready;
-  if (registration) return registration.showNotification(title, msg);
-}
+
 
 const notify = (title, msg) => !msg?.actions ? new Notification(title, msg) : serviceWorkerNotify(title, msg);
 
