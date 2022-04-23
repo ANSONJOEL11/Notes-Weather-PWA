@@ -177,8 +177,7 @@ body {
     }
   }
 
-  .info,
-  .twitter {
+  .info{
     position: fixed;
     top: 0;
     right: 0;
@@ -187,14 +186,12 @@ body {
       background-color 300ms ease;
   }
 
-  .info span,
-  .twitter span {
+  .info span {
     display: none;
   }
 
   @media screen and (max-width: 500px) {
-    .info,
-    .twitter {
+    .info {
       position: absolute;
       z-index: 2;
     }
@@ -206,18 +203,12 @@ body {
    } 
   }
 
-  .twitter {
-    top: 45px;
-  }
 
   @media screen and (max-width: 500px) {
-   .twitter {
-    top: 0;
-   } 
+
   }
 
-  .info svg,
-  .twitter svg {
+  .info svg {
     width: 30px;
     height: 30px;
     fill: #fff;
@@ -226,14 +217,12 @@ body {
   }
 
   @media screen and (max-width: 500px) {
-   .info svg,
-   .twitter svg {
+   .info svg {
     width: 20px;
     fill: #333;
    } 
   }
 
-  .info:hover svg,
-  .twitter:hover svg {
+  .info:hover svg {
     fill: #333;
   }
