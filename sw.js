@@ -10,9 +10,6 @@ self.addEventListener('install', function(event) {
 
       // Define what we want to cache
       return cache.addAll([
-        
-        
-        
         'index.html',
         'js/app.js',
         'js/jquery.min.js',
