@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Weather app</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/onsenui/css/onsenui.css" />
+    <link rel="stylesheet" href="https://unpkg.com/onsenui/css/onsen-css-components.min.css" />
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/weather-icons.min.css">
     <link rel="stylesheet" href="css/main.css">
@@ -14,7 +16,7 @@
 <header class="header">
   <div class="row">
     <div class="header__logo">
-     <h2><a href="#">Weatherapp</h2>
+     <h2><a href="#">WeatherApp <ons-button id="myButton" style="background-color: red;">View Notes</ons-button></h2>
     </div>
     <p class="header__date">
     </p>
@@ -30,6 +32,7 @@
 <main class="weather">
    <h1 class="weather__message">Please enter the name of the city or click on the  
      <a title="geolocate" href="#" class="header__geolocate"><svg  class="icon icon-target"><use xlink:href="#icon-target"></use></svg></a>to allow us to get your location
+     
   </h1>
 </main>
 
@@ -49,6 +52,12 @@
 </symbol>
 </defs>
 </svg>
+<script type="text/javascript">
+  document.getElementById("myButton").onclick = function () {
+      location.href = "index.html";
+  };
+  </script>
 <script src="script.js"></script>
+<script src="https://unpkg.com/onsenui/js/onsenui.min.js"></script>
 </body>
 </html>
