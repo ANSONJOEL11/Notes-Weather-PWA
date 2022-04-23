@@ -13,35 +13,35 @@
       "short_name": "Notes",
       "description": "View Notes",
       "url": "index.html",
-      "icons": [{ "src": "img/android-launchericon-192-192.png", "sizes": "192x192" }]
+      "icons": [{ "src": "img/icon-558.png", "sizes": "192x192" }]
     },
     {
       "name": "Weather",
       "short_name": "Weather",
       "description": "View the Weather",
       "url": "weather.html",
-      "icons": [{ "src": "img/android-launchericon-192-192.png", "sizes": "192x192" }]
+      "icons": [{ "src": "img/icon-152.png", "sizes": "192x192" }]
     }
   ],
   "icons": [
     {
-      "src": "img/android-launchericon-72-72.png",
-      "sizes": "72x72",
+      "src": "img/android-launchericon-48-48.png",
+      "sizes": "48x48",
       "type": "image/png"
     },
     {
       "src": "img/android-launchericon-144-144.png",
-      "sizes": "144x144",
+      "sizes": "114x114",
       "type": "image/png"
     },
     {
       "src": "img/android-launchericon-192-192.png",
-      "sizes": "192x192",
+      "sizes": "152x152",
       "type": "image/png"
     },
     {
       "src": "img/android-launchericon-512-512.png",
-      "sizes": "512x512",
+      "sizes": "558x558",
       "type": "image/png"
     }
   ]
