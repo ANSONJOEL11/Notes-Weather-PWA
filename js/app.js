@@ -62,8 +62,8 @@ const notifyActions = async () => {
       //image: 'transfer.png',
       body: "You are in the Notes App",
       actions: [
-        { action: "accept", title: "Accept", icon: "img/icon-60.png" },
-        { action: "decline", title: "Decline", icon: "img/icon-60.png" },
+        { action: "accept", title: "Accept" },
+        { action: "decline", title: "Decline" },
       ]
     }
     const rslt = notify(title, msg);
