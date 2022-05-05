@@ -1,3 +1,3 @@
 # pwaProjectSample
 
-Live Site
+Live Demo Site - https://ansonjoel11.github.io/Notes-Weather-PWA/
